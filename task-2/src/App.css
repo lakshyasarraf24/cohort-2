@@ -1,0 +1,23 @@
+*{
+box-sizing:border-box;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+}
+#root{
+    height: 100%;
+    width: 100%;
+}
+.bottom2{
+background:linear-gradient(transparent,rgb(255, 255, 255));
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+}
+.bottom3{
+background:linear-gradient(transparent,rgba(0, 0, 0, 0.226));
+backdrop-filter: blur(2px);
+-webkit-backdrop-filter: blur(2px);
+color: white;
+}
