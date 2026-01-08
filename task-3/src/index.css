@@ -1,0 +1,67 @@
+.parent {
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  border-radius: 10px;
+}
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+}
+form button {
+  padding: 0.5rem 2rem;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+form button:active {
+  scale: 0.95;
+}
+
+.cards {
+  width: 100%;
+  padding: 2rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  line-height: 1;
+  width: 20%;
+  padding: 1rem 1rem;
+  background-color: rgba(223, 190, 241, 0.548);
+  border-radius: 10px;
+}
+.card img {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card button {
+  padding: 0.5rem 1rem;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.card button:active {
+  scale: 0.95;
+}/*# sourceMappingURL=index.css.map */
