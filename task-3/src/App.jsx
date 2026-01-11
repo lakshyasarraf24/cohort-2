@@ -2,17 +2,18 @@ import React from 'react'
 import { useState } from 'react'
 
 const App = () => {
+    const localdata=JSON.parse(localStorage.getItem('allusers'))||[]
     const [name,setname]=useState("")
     const [link,setlink]=useState("")
     const [designation,setdesignation]=useState("")
     const [description,setdescription]=useState("")
-    const [user,setuser]=useState([])
+    const [user,setuser]=useState(localdata)
     function preventdefault(e){
         e.preventDefault()
         let oldval=[...user]
         oldval.push({name,link,designation,description})
         setuser(oldval)
-        console.log(oldval);
+        localStorage.setItem('allusers',JSON.stringify(oldval))
         setname('')
         setlink('')
         setdesignation('')
@@ -23,6 +24,7 @@ const App = () => {
         let copyuser=[...user]
         copyuser.splice(idx,1)
         setuser(copyuser)
+        localStorage.setItem('allusers',JSON.stringify(copyuser))
     }
   return (
     <div className='parent'>
@@ -32,6 +34,7 @@ const App = () => {
         <input type="text" 
         placeholder='Enter name' 
         value={name}
+        required
         onChange={(e)=>{
             setname(e.target.value)
             
@@ -40,13 +43,15 @@ const App = () => {
         <input type="text" 
         placeholder='Enter link'
         value={link}
+        required
         onChange={(e)=>{
             setlink(e.target.value) 
         }}
         />
         <input type="text" 
         placeholder='Enter designation'
-         value={designation}
+        value={designation}
+        required
         onChange={(e)=>{
             setdesignation(e.target.value)
         }}
@@ -54,6 +59,7 @@ const App = () => {
         <input type="text" 
         placeholder='Enter description' 
         value={description}
+        required
         onChange={(e)=>{
             setdescription(e.target.value)
             
