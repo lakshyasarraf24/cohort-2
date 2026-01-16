@@ -7,6 +7,8 @@ import Product from './pages/product.jsx'
 import Men from './pages/men.jsx'
 import Course from './pages/course.jsx'
 import Coursedetail from './pages/coursedetail.jsx'
+import Ds from './pages/ds.jsx'
+import Webdev from './pages/webdev.jsx'
 import Errorpage from './pages/errorpage.jsx'
 
 const App = () => {
@@ -17,6 +19,7 @@ const App = () => {
         <Link to={'/about'}>about</Link>
         <Link to={'/contact'}>contact</Link>
         <Link to={'/product'}>product</Link>
+        <Link to={'/course'}>course</Link>
       </div>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -24,7 +27,10 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/product' element={<Product />} />
         <Route path='product/men' element={<Men />} />
-        <Route path='product/course' element={<Course />} />
+        <Route path='/course' element={<Course />}>
+          <Route path='/course/ds' element={<Ds/>}/>
+          <Route path='/course/webdev' element={<Webdev/>}/>
+        </Route>
         <Route path='product/course/:id' element={<Coursedetail />} />
         <Route path='*' element={<Errorpage/>}/>
       </Routes>

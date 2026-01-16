@@ -1,5 +1,4 @@
 *{
-margin:0;
 box-sizing:border-box;
 }
 
@@ -9,4 +8,10 @@ width: 100%;
 }
 #root{
     height: 100%;
+}
+.webdev{
+    margin: 1rem;
+}
+.ds{
+    margin: 1rem;
 }
