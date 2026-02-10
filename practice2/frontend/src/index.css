@@ -1,0 +1,43 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+height: 100%;
+width: 100%;
+background-color: black;
+}
+.card{
+    border: 2px solid black;
+    width: 15%;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: grey;
+}
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+form{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.5rem;
+    background-color: aqua;
+    width: 30%;
+}
+input{
+    padding: 0.5rem 1rem;
+}
+button{
+    padding: 0.5rem 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
