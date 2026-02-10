@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image_link": "https://i.pinimg.com/736x/0b/67/96/0b679656ca7ee45626d54e01c3c476b5.jpg",
+    "title": "Weather App",
+    "description": "A simple weather application that provides current weather updates based on location.",
+    "tags": ["JavaScript", "React", "API", "Weather"],
+    "repo_link": "https://github.com/username/weather-app",
+    "demo_link": "https://weather-app-demo.com"
+  },
+  {
+    "id": 2,
+    "image_link": "https://i.pinimg.com/1200x/f6/39/36/f63936cd1f42671adcdd554d51c0446e.jpg",
+    "title": "Portfolio Website",
+    "description": "A personal portfolio website showcasing web development projects and skills.",
+    "tags": ["HTML", "CSS", "JavaScript", "React"],
+    "repo_link": "https://github.com/username/portfolio-website",
+    "demo_link": "https://portfolio-website.com"
+  },
+  {
+    "id": 3,
+    "image_link": "https://i.pinimg.com/1200x/fd/a9/56/fda956c64b4b1377f82f8946285770e2.jpg",
+    "title": "Task Manager",
+    "description": "A task management app that allows users to add, edit, and delete tasks.",
+    "tags": ["Node.js", "Express", "MongoDB", "Full Stack"],
+    "repo_link": "https://github.com/username/task-manager",
+    "demo_link": "https://task-manager-demo.com"
+  },
+  {
+    "id": 4,
+    "image_link": "https://i.pinimg.com/1200x/41/d4/73/41d473d91c0674dfe22e550578c17da7.jpg",
+    "title": "E-commerce Website",
+    "description": "A fully functional e-commerce site with a shopping cart and payment integration.",
+    "tags": ["React", "Node.js", "MongoDB", "E-commerce"],
+    "repo_link": "https://github.com/username/e-commerce-website",
+    "demo_link": "https://e-commerce-demo.com"
+  },
+  {
+    "id": 5,
+    "image_link": "https://tse3.mm.bing.net/th/id/OIP.r7TKPrwGp_xcvpvUHuju-gHaHf?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "title": "Blog Platform",
+    "description": "A platform for users to write, edit, and share blog posts.",
+    "tags": ["Ruby on Rails", "PostgreSQL", "CSS", "Blogging"],
+    "repo_link": "https://github.com/username/blog-platform",
+    "demo_link": "https://blog-platform-demo.com"
+  }
+]

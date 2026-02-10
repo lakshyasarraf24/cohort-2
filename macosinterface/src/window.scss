@@ -1,0 +1,47 @@
+    .window{
+        background-color: black;
+        height: 100%;
+        overflow: hidden;
+        .nav{
+            width: 100%;
+            background-color: rgb(23, 23, 23);
+            display: flex;
+            align-items: center;
+            padding: 0.3rem 0.5rem;
+            gap: 1rem;
+            .dots{
+                width: fit-content;
+                display: flex;
+                gap: 0.2rem;
+                .red{
+                width: 10px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-color: red;
+            }
+            .yellow{
+                width: 10px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-color: yellow;
+            }.green{
+                width: 10px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-color: green;
+            }
+            }
+            .title{
+                color: white;
+                font-weight: 500;
+                font-size: 11px;
+            }
+        }
+        .main-content{
+            color: white;
+            height: 100%;
+        }
+    }
+*::-webkit-scrollbar{
+    display: none;
+}

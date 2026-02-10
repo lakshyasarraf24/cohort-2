@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("https://i.pinimg.com/1200x/1e/e0/9c/1ee09cfeb1edd079a6e1b3ac7fead4e1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.dock-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding-block: 0.4rem;
+  padding-inline: 0.4rem;
+  background-color: rgba(111, 111, 111, 0.356);
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: flex;
+  gap: 0.5rem;
+}
+.dock-container .icon {
+  width: 30px;
+  aspect-ratio: 1/1;
+  transition: cubic-bezier(0.42, 0, 0.58, 1) 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.dock-container .calender {
+  background: linear-gradient(to bottom, rgb(76, 34, 215), rgb(20, 59, 176));
+}
+.dock-container .github {
+  background: linear-gradient(to bottom, rgb(88, 87, 87), rgb(27, 27, 28));
+}
+.dock-container .spotify {
+  background: linear-gradient(to bottom, rgb(7, 241, 42), rgb(21, 141, 55));
+}
+.dock-container .notes {
+  background: linear-gradient(to bottom, rgb(235, 206, 62), rgb(217, 133, 31));
+}
+.dock-container .terminal {
+  background: linear-gradient(to bottom, rgb(44, 44, 44), rgb(31, 32, 35));
+}
+.dock-container .terminal i {
+  color: white;
+}
+.dock-container .link {
+  background: linear-gradient(to bottom, rgb(150, 49, 222), rgb(150, 49, 158));
+}
+.dock-container .icon:hover {
+  transform: scale(1.25) translateY(-20%);
+}
+.dock-container .icon:hover + .icon {
+  transform: scale(1.15) translateY(-10%);
+}
+.dock-container .icon:has(+ .icon:hover) {
+  transform: scale(1.15) translateY(-10%);
+}
+.dock-container .apple-logo {
+  color: white;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(64, 62, 62, 0.349);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  font-size: 10px;
+  color: white;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+}
+nav .left {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}/*# sourceMappingURL=index.css.map */
